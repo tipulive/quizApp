@@ -54,7 +54,7 @@ services:
   
   frontend:
     build:
-      context: ./frontend
+      context: ./Appfrontend
       dockerfile: Dockerfile
     
     tty: true
@@ -65,7 +65,7 @@ services:
     
     volumes:
         
-      - ./frontend:/app/frontend
+      - ./Appfrontend:/app/Appfrontend
 
     depends_on:
       - mysql
