@@ -1,0 +1,11 @@
+@baseUrl = http://localhost:8000/api
+
+###testrate
+POST {{baseUrl}}/add
+Content-Type: application/json
+
+{
+"answer": "Good"
+}
+###testrate
+GET {{baseUrl}}/result
